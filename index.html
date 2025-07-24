@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打造虚拟打火机</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>打造虚拟打火机</h1>
+</header>
+
+<nav>
+    <a href="#home">首页</a>
+    <a href="#about">关于我们</a>
+    <a href="#services">服务</a>
+    <a href="#contact">联系我们</a>
+</nav>
+
+<div class="content">
+
+
+import sys
+from PyQt5 QtWidgets import (QApplication, QMainWindow, QPushButton, 
+                            QSlider, QLabel, QVBoxLayout, QWidget)
+from PyQt5 QtCore import Qt, QTimer, QPropertyAnimation
+from PyQt5 QtGui import QPixmap, QPainter, QColor, QBrush, QPen
+from PyQt5 QtMultimedia import QSoundEffect
+import random
+ 
+class LighterWindow(QMainWindow):
+    def __init__(self):
+        super() __init__()
+        self setWindowTitle("虚拟打火机")
+        self setGeometry(100, 100, 300, 500)
+        
+        # 初始化状态
+        self is_lit = False
+        self flame_height = 0
+        self max_flame_height = 100
+        
+        # 创建UI组件
+        self init_ui()
+        
+        # 加载声音
+        self load_sounds()
+        
+        # 火焰动画定时器
+        self flame_timer = QTimer(self)
+        self flame_timer timeout connect(self update_flame)
+        
+    def init_ui(self):
+        # 主部件和布局
+        central_widget = QWidget()
+        self setCentralWidget(central_widget)
+        layout = QVBoxLayout(central_widget)
+
+
+</p>
+  
+</div>
+
+<footer>
+    <p>版权所有 &copy; 2025 我的网站</p>
+</footer>
+<div style="display:none"><script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"KSz9p2HYYDIoqev8",ck:"KSz9p2HYYDIoqev8"})</script></div>
+</body>
+</html>
