@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打造虚拟打火机</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>打造虚拟打火机</h1>
+</header>
+
+<nav>
+    <a href="#home">首页</a>
+    <a href="#about">关于我们</a>
+    <a href="#services">服务</a>
+    <a href="#contact">联系我们</a>
+</nav>
+
+<div class="content">
+def ignite_flame(self):
+        """点火"""
+        if not self is_lit:
+            self is_lit = True
+            self ignite_sound play()  # 播放点火声音
+            self flame_timer start(50)  # 每50毫秒更新火焰
+            self ignite_button setText("熄灭")
+            self flame_slider setEnabled(True)
+    
+    def extinguish_flame(self):
+        """熄灭火焰"""
+        if self is_lit:
+            self is_lit = False
+            self extinguish_sound play()  # 播放熄灭声音
+            self flame_timer stop()
+            self ignite_button setText("点火")
+            self flame_slider setValue(0)
+            self flame_slider setEnabled(False)
+    
+    def adjust_flame(self, value):
+        """调整火焰大小"""
+        if self is_lit:
+            self flame_height = int(value * self max_flame_height / 100)
+            self update_lighter_image()
+    
+    def update_flame(self):
+        """更新火焰动画"""
+        if self is_lit:
+            # 添加一些随机变化使火焰更自然
+            self flame_height = min(
+                self max_flame_height, 
+                max(0, self flame_height + random randint(-2, 2))
+            )
+            self update_lighter_image()
+
+
+
+
+
+
+</p>
+  
+</div>
+
+<footer>
+    <p>版权所有 &copy; 2025 我的网站</p>
+</footer>
+<div style="display:none"><script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"KSz9p2HYYDIoqev8",ck:"KSz9p2HYYDIoqev8"})</script></div>
+</body>
+</html>
