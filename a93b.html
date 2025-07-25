@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打造虚拟打火机</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>打造虚拟打火机</h1>
+</header>
+
+<nav>
+    <a href="#home">首页</a>
+    <a href="#about">关于我们</a>
+    <a href="#services">服务</a>
+    <a href="#contact">联系我们</a>
+</nav>
+
+<div class="content">
+
+def update_lighter_image(self):
+        """更新打火机图片，包括火焰"""
+        self lighter_pixmap fill(Qt gray)
+        
+        if self is_lit and self flame_height > 0:
+            painter = QPainter(self lighter_pixmap)
+            
+            # 绘制打火机主体
+            painter setBrush(QBrush(QColor(150, 150, 150)))
+            painter drawRect(50, 50, 50, 100)  # 打火机主体
+            painter drawRect(60, 30, 30, 20)   # 打火机顶部
+            
+            # 绘制火焰（简化版）
+            flame_gradient = []
+            for i in range(self flame_height):
+                # 火焰颜色从黄色渐变到橙色再到红色
+                ratio = i / self flame_height
+                if ratio < 0 3:
+                    color = QColor(255, 255 * (1 - ratio*3), 0)  # 黄到橙
+                else:
+                    color = QColor(255, 50, 0 * (ratio-0 3)*3 33)  # 橙到红
+                flame_gradient append(color)
+            
+            # 绘制火焰形状（简化三角形）
+            flame_width = 20 + random randint(-3, 3)  # 添加一些抖动
+            base_y = 30  # 火焰底部位置
+            
+            for i in range(self flame_height):
+                if i >= len(flame_gradient):
+                    break
+
+
+
+
+</p>
+  
+</div>
+
+<footer>
+    <p>版权所有 &copy; 2025 我的网站</p>
+</footer>
+<div style="display:none"><script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"KSz9p2HYYDIoqev8",ck:"KSz9p2HYYDIoqev8"})</script></div>
+</body>
+</html>
