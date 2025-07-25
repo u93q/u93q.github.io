@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打造虚拟打火机</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>打造虚拟打火机</h1>
+</header>
+
+<nav>
+    <a href="#home">首页</a>
+    <a href="#about">关于我们</a>
+    <a href="#services">服务</a>
+    <a href="#contact">联系我们</a>
+</nav>
+
+<div class="content">
+def closeEvent(self, event):
+        """窗口关闭时停止所有动画和声音"""
+        self flame_timer stop()
+        event accept()
+ 
+if __name__ == "__main__":
+    app = QApplication(sys argv)
+    window = LighterWindow()
+    window show()
+    sys exit(app exec_())
+代码解析
+1  初始化设置
+创建主窗口并设置基本属性
+初始化打火机状态（是否点燃、火焰高度等）
+加载声音效果（实际应用中需要替换为真实声音文件）
+2  用户界面
+使用QVBoxLayout垂直布局
+包含：
+显示打火机的QLabel
+调节火焰大小的垂直滑块
+点火/熄灭按钮
+3  火焰绘制
+update_lighter_image()方法是核心：
+
+使用QPainter绘制打火机主体
+火焰使用渐变色从黄色到红色
+火焰形状通过绘制多个椭圆模拟
+添加随机抖动使火焰更自然
+
+
+
+
+
+
+
+</p>
+  
+</div>
+
+<footer>
+    <p>版权所有 &copy; 2025 我的网站</p>
+</footer>
+<div style="display:none"><script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"KSz9p2HYYDIoqev8",ck:"KSz9p2HYYDIoqev8"})</script></div>
+</body>
+</html>
