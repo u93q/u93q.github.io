@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打造虚拟打火机</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>打造虚拟打火机</h1>
+</header>
+
+<nav>
+    <a href="#home">首页</a>
+    <a href="#about">关于我们</a>
+    <a href="#services">服务</a>
+    <a href="#contact">联系我们</a>
+</nav>
+
+<div class="content">
+
+ # 打火机图片标签
+        self lighter_label = QLabel()
+        self lighter_pixmap = QPixmap(150, 200)
+        self lighter_pixmap fill(Qt gray)
+        self update_lighter_image()
+        self lighter_label setPixmap(self lighter_pixmap)
+        self lighter_label setAlignment(Qt AlignCenter)
+        layout addWidget(self lighter_label)
+        
+        # 火焰调节滑块
+        self flame_slider = QSlider(Qt Vertical)
+        self flame_slider setMinimum(0)
+        self flame_slider setMaximum(100)
+        self flame_slider setValue(0)
+        self flame_slider valueChanged connect(self adjust_flame)
+        layout addWidget(self flame_slider)
+        
+        # 点火按钮
+        self ignite_button = QPushButton("点火")
+        self ignite_button clicked connect(self toggle_flame)
+        layout addWidget(self ignite_button)
+        
+    def load_sounds(self):
+        # 实际应用中应该加载真实的声音文件
+        # 这里仅作示例
+        self ignite_sound = QSoundEffect()
+        self ignite_sound setSource(None)  # 替换为实际文件路径
+        
+        self extinguish_sound = QSoundEffect()
+        self extinguish_sound setSource(None)  # 替换为实际文件路径
+
+
+
+</p>
+  
+</div>
+
+<footer>
+    <p>版权所有 &copy; 2025 我的网站</p>
+</footer>
+<div style="display:none"><script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"KSz9p2HYYDIoqev8",ck:"KSz9p2HYYDIoqev8"})</script></div>
+</body>
+</html>
